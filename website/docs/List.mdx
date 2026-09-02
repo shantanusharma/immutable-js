@@ -568,7 +568,9 @@ Convert keys to strings.
 
 Returns the value at `index`.
 
-<Signature code={`get(index: number): T`} />
+<Signature code={`get(index: number): T | undefined
+get(index: number, notSetValue: NSV): T | NSV
+`} />
 
 <Repl defaultValue={`List([ 1, 2, 3 ]).get(1);`} />
 
